@@ -64,7 +64,7 @@ AI_LANGUAGE_TUTOR/
 
 * The AI model and parameters are defined in `utils/config.json`.
 * Update the field `gemini_model_name` to switch Gemini models.
-* Set the `learning_language` field for personalized learning.
+* Set the `lesson_plan` field for personalized learning.
 
 ### **Installation**
 
