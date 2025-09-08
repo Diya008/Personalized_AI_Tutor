@@ -1,89 +1,105 @@
-# Personalized AI Tutor
+# 🎓 Personalized AI Tutor
 
-## 📌 Project Overview
-Personalized AI Tutor is a AI-powered learning assistant built using **Streamlit** and **Google's Gemini models**. The app provides structured learning with lesson plans, quizzes, and AI-driven conversational practice.
+## 📌 Overview
 
-## 🚀 Features
-- **AI Chatbot Tutor** – Engage in real-time AI-powered conversations.
-- **Lesson Plans** – Auto-generated structured learning plans.
-- **Vocabulary Management** – Store, review, and practice new words.
-- **Quizzes** – AI-generated quizzes based on stored vocabulary.
-- **Lesson History** – Review past conversations and learning progress.
-
-## 🏗️ Tech Stack
-- **Frontend:** Streamlit (Fast UI prototyping)
-- **Backend:** OpenAI API (LLM-powered tutor)
-- **Data Storage:** Local JSON files (User history, vocabulary, lesson plans)
-- **Customization:** CSS/HTML for UI enhancements
-
-## 📂 Folder Structure
-```plaintext
-AI_LANGUAGE_TUTOR/
-│── assets/                # Stores user data
-│   │── chat_history.json      # Stores conversation history
-│   │── lesson_plan_inputs.json  # Inputs for lesson planning
-│   │── lesson_plan.json        # Saved lesson plans
-│   │── user_vocabulary.json    # User's vocabulary list
-│
-│── pages/                # Streamlit UI pages
-│   │── chatbot.py         # AI chatbot interface
-│   │── history.py         # Lesson history page
-│   │── lesson_plan.py     # Lesson plan page
-│   │── vocab.py           # Vocabulary management page
-│
-│── utils/                 # Utility functions and configurations
-│   │── config.json        # Stores configuration settings
-│   │── storage.py         # Handles saving/loading data
-│
-│── .gitignore             # Ignore unnecessary files
-│── app.py                 # Main Streamlit entry point
-│── sidebar.py             # Sidebar navigation
-│── README.md              # Project documentation
-```
-
-## 🛠️ Setup & Installation
-### **Configuring the AI Model & Learning Language**
-- The AI model and parameters are defined in `utils/config.json`.
-- To specify which GPT model to use, update the `openai_model_name` field.
-- The learning language can be set in `config.json` under `learning_language`.
-- Ensure you provide a valid OpenAI API key in your environment variables or secure settings.
-
-
-### **Prerequisites**
-Ensure you have **Python 3.8+** installed.
-
-### **Installation Steps**
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/your-repo/AI-Language-Tutor.git
-   cd AI-Language-Tutor
-   ```
-2. **Create a Virtual Environment:**
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # Mac/Linux
-   venv\Scripts\activate     # Windows
-   ```
-3. **Install Dependencies:**
-   ```sh
-   pip install -r requirements.txt
-   ```
-4. **Run the App:**
-   ```sh
-   streamlit run app1.py
-   ```
-
-## 📖 Usage Guide
-1. **Start the app** and select an activity from the main page.
-2. **Use the AI Chat** for practice and quizes
-3. **Generate lesson plans** tailored to your learning goals.
-5. **Take quizzes** to complete the topic and reinforce learning.
-6. **Review past conversations** in the history tab.
-
-## 👨‍💻 Reference
-[Medium article](https://medium.com/@kate.ruksha/building-an-ai-powered-personal-language-tutor-with-chatgpt-59d2e4cd7f56).
-
+**Personalized AI Tutor** is an intelligent, AI-powered learning assistant built with **Streamlit** and **Google’s Gemini models**. It delivers structured learning experiences through interactive lesson plans, AI-driven quizzes, conversational practice, and YouTube video explanations—all tailored to support effective self-paced learning.
 
 ---
-🔹 *Personalized AI tutor - making learning easier!*
 
+## 🚀 Key Features
+
+* 🤖 **AI Chatbot Tutor** – Real-time AI-powered conversations for interactive learning.
+* 📑 **Lesson Plans** – Auto-generated structured learning paths.
+* 🎥 **YouTube Explanation** – Paste a YouTube link and receive simplified explanations.
+* 📝 **AI-Generated Quizzes** – Topic-specific quizzes to reinforce knowledge.
+* 📜 **Lesson History** – Review past conversations and track learning progress.
+
+---
+
+## 🏗️ Tech Stack
+
+* **Frontend:** Streamlit (rapid UI prototyping)
+* **Backend:** Google Gemini Models (LLM-powered tutor)
+* **Data Storage:** Local JSON files (user history, lesson plans, vocabulary)
+* **UI Customization:** CSS & HTML enhancements
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+AI_LANGUAGE_TUTOR/
+│── assets/                
+│   ├── chat_history.json         # Stores conversation history
+│   ├── lesson_plan_inputs.json   # Lesson plan input prompts
+│   ├── lesson_plan.json          # Generated lesson plans
+│   └── user_vocabulary.json      # Vocabulary list
+│
+│── pages/                        
+│   ├── chatbot.py                # AI chatbot interface
+│   ├── history.py                # Lesson history page
+│   ├── explain_youtube.py        # Explain YouTube videos
+│   ├── lesson_plan.py            # Lesson plan generator
+│   └── know_more.py              # Extra topics & resources
+│
+│── utils/                        
+│   ├── config.json               # Configuration settings
+│   └── storage.py                # Data saving/loading
+│
+│── app1.py                       # Main Streamlit entry point
+│── sidebar.py                    # Sidebar navigation
+│── README.md                     # Documentation
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### **Prerequisites**
+
+* Python **3.8+**
+* Valid **Gemini API Key** (stored in environment variables or secure settings)
+
+### **Configuration**
+
+* The AI model and parameters are defined in `utils/config.json`.
+* Update the field `gemini_model_name` to switch Gemini models.
+* Set the `learning_language` field for personalized learning.
+
+### **Installation**
+
+```sh
+# 1. Create a Virtual Environment
+python -m venv venv
+source venv/bin/activate    # Mac/Linux
+venv\Scripts\activate       # Windows
+
+# 2. Install Dependencies
+pip install -r requirements.txt
+
+# 3. Run the App
+streamlit run app1.py
+```
+
+---
+
+## 📖 Usage
+
+1. **Launch the app** with Streamlit.
+2. **Start AI conversations** for practice and quizzes.
+3. **Generate lesson plans** tailored to your learning goals.
+4. **Paste a YouTube link** to get simplified explanations.
+5. **Take quizzes** to reinforce learning.
+6. **Review past progress** in the lesson history tab.
+
+---
+
+## 📚 References
+
+* [Medium Article – Building an AI-Powered Personal Language Tutor](https://medium.com/@kate.ruksha/building-an-ai-powered-personal-language-tutor-with-chatgpt-59d2e4cd7f56)
+
+---
+
+## ✨ Vision
+
+> *Personalized AI Tutor – making self-paced learning smarter, interactive, and engaging!*
