@@ -1,0 +1,9 @@
+google-generativeai
+google-genai
+openai
+pandas
+random
+datetime
+streamlit
+PyPDF2
+youtube-transcript-api
