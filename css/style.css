@@ -1,0 +1,90 @@
+html, body {
+            font-family: 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #181926 60%, #1755a6 100%);
+        }
+        .hero {
+            background: linear-gradient(110deg, #e7f0fa 50%, #dae7f7 100%);
+            border-radius: 34px;
+            box-shadow: 0 14px 34px #232f4914;
+            margin: 20px auto 28px auto;
+            padding: 22px 40px 24px 40px;
+            max-width: 770px;
+            position: relative;
+        }
+        .tutor-avatar {
+            position: absolute;
+            left: 44px;
+            top: -20px;
+            width: 104px;
+            height: 104px;
+            border-radius: 50%;
+            box-shadow: 0 0 24px #4ad0ff44;
+            z-index: 2;
+        }
+        .hero-headline {
+            font-size: 2.7rem;
+            color: #263055;
+            font-weight: 850;
+            margin-bottom: 10px;
+        }
+        .hero-sub {
+            font-size: 1.3rem;
+            color: #6b80a5;
+            margin-bottom: 0;
+        }
+        .glass-nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 32px;
+        }
+        .glass-button .stButton > button {
+            border-radius: 18px;
+            padding: 15px 34px;
+            background: rgba(241,246,250,0.75);
+            backdrop-filter:blur(4px);
+            box-shadow: 0 2px 18px #1f5ba440;
+            font-size: 1.08rem;
+            font-weight: 600;
+            color: #234481;
+            border: 2px solid #bad1ec !important;
+            transition: all 0.2s;
+        }
+        .glass-button .stButton>button:hover {
+            background: #f3f8ff !important;
+            border-color: #5abfff !important;
+            color: #13286a !important;
+            box-shadow: 0 8px 18px #1771c214;
+        }
+        .learn-bar {
+            margin: 40px 0 15px 0;
+        }
+        .my-progress-bar {
+            width: 100%;
+            background: linear-gradient(270deg, #a1c4fd, #c2e9fb);
+            box-shadow: 0 2px 18px #38e6fb22;
+            border-radius: 32px;
+            height: 46px;
+            position: relative;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+        .progress-label {
+            color: #1b3756;
+            text-align: center;
+            font-size: 1.17rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .motive-tip {
+            background: linear-gradient(98deg,#12032e10 69%,#bdbddf09 99%);
+            color: #c0d3ff;
+            font-style: italic;
+            text-align: center;
+            font-size: 1.08rem;
+            border-radius: 20px;
+            padding: 16px 12px 10px 12px;
+            box-shadow: 0 0 10px #75aaff22;
+            margin: 38px 0 0 0;
+        }

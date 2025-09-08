@@ -1,0 +1,19 @@
+.space-road {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .space-road::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #ffffffb3;
+        transform: translateY(-50%);
+    }
